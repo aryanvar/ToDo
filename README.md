@@ -1,24 +1,40 @@
-Todo App - Full Stack Application
-Overview
-A full-stack Todo application built with Spring Boot, React, and PostgreSQL. Features complete CRUD operations, service layer architecture, and modern UI.
+# Todo App – Full Stack Application
 
-Tech Stack
-Backend: Java 17, Spring Boot 3.2, PostgreSQL, Maven
-Frontend: ReactVite, Axios, CSS3 , Node 20.19.0
-Database: PostgreSQL
+A full-stack Todo application built using Spring Boot, React (Vite), and PostgreSQL. This project demonstrates complete CRUD operations, a service-layer backend architecture, and a responsive, modern frontend interface.
 
-Features
-Create, read, update, delete todos
-Toggle completion status
-Filter by status (All/Pending/Completed)
-Input validation & error handling
-RESTful API with proper HTTP status codes
-Service layer architecture
+---
 
-1. Database
-sqlCREATE DATABASE todoapp;
+## Tech Stack
+
+| Layer      | Technologies                                      |
+|------------|---------------------------------------------------|
+| Backend    | Java 17, Spring Boot 3.2, Maven                   |
+| Frontend   | React (Vite), Axios, CSS3, Node.js 20.19.0        |
+| Database   | PostgreSQL                                        |
+
+---
+
+## Features
+
+- Create, Read, Update, Delete (CRUD) todos
+- Toggle completion status
+- Filter by All / Pending / Completed
+- Input validation and error handling
+- RESTful API with proper HTTP status codes
+- Service-layer architecture for clean separation of concerns
+
+---
+
+## Database Setup (PostgreSQL)
+
+``sql
+-- Create the database
+CREATE DATABASE todoapp;
+
+-- Connect to the database
 \c todoapp;
 
+-- Create the todos table
 CREATE TABLE todos (
     id SERIAL PRIMARY KEY,
     title VARCHAR(255) NOT NULL,
