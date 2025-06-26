@@ -28,15 +28,17 @@ CREATE TABLE todos (
 );
 
 2.Backend
-cd backend
+# cd backend
 # Update application.properties with your DB credentials
 # Runs on http://localhost:8080
 
 3. Frontend
-bashcd frontend
-npm install
-npm install axios
-npm start
+# bashcd frontend
+# npm install
+# npm install axios
+# npm start
+# Runs on http://localhost:5173
+
 
 📋 API Endpoints
 
