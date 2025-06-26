@@ -43,12 +43,12 @@ CREATE TABLE todos (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-2.Backend
+## 2.Backend
 # cd backend
 # Update application.properties with your DB credentials
 # Runs on http://localhost:8080
 
-3. Frontend
+## 3. Frontend
 # bashcd frontend
 # npm install
 # npm install axios
@@ -66,7 +66,7 @@ CREATE TABLE todos (
 | DELETE | `/api/todos/{id}` | Delete a todo by ID     |
 
 
-Usage
+## 4.Usage
 
 Add Todo: Type in input field and click "Add"
 Edit: Click "Edit" button, modify, then "Save"
